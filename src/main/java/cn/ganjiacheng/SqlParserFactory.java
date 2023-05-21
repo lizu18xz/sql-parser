@@ -2,7 +2,6 @@ package cn.ganjiacheng;
 
 import cn.ganjiacheng.enums.SqlEngineEnum;
 import cn.ganjiacheng.hive.MyHiveSqlParser;
-import cn.ganjiacheng.mysql.MysqlSqlParser;
 import cn.ganjiacheng.presto.MyPresoSqlParser;
 import cn.ganjiacheng.spark.MySparkSqlParser;
 
@@ -18,7 +17,7 @@ public class SqlParserFactory {
         if (SqlEngineEnum.HIVE.equals(sqlEngineEnum)) {
             return new MyHiveSqlParser();
         } else if (SqlEngineEnum.MYSQL.equals(sqlEngineEnum)) {
-            return new MysqlSqlParser();
+            return null;
         } else if (SqlEngineEnum.PRESTO.equals(sqlEngineEnum)) {
             return new MyPresoSqlParser();
         } else if (SqlEngineEnum.SPARK.equals(sqlEngineEnum)) {

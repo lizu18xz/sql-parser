@@ -4,7 +4,6 @@ import cn.ganjiacheng.SqlParserAbstract;
 import cn.ganjiacheng.antlr.PrestoSqlLexer;
 import cn.ganjiacheng.antlr.PrestoSqlParser;
 import cn.ganjiacheng.enums.SqlTypeEnum;
-import cn.ganjiacheng.mysql.MysqlSqlTypeParser;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
